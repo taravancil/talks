@@ -1,0 +1,150 @@
+* Serverless Architecture
+
+** What is it?
+** Why is it useful?
+** Drawbacks
+
+Tara Vancil - @taravancil
+2016-10-13
+
+* What is serverless?
+
+** serverless != no servers
+
+It's servers all the way down...
+
+* It's servers all the way down...
+
+...but with a serverless approach, we distance ourselves from
+servers as much as possible
+
+"Given the complexity of managing machines at scale, how can you avoid
+the problem?" - Paul Biggar
+
+* How do we avoid dealing with servers?
+
+Managing servers can be expensive and difficult:
+
+- Scaling
+- Availability
+- Reliability
+
+** Let someone else do it!
+
+Someone like Lambda, OpenWhisk, Azure, etc.
+
+* How do we avoid dealing with servers?
+
+Managing servers can be expensive and difficult:
+
+- Scaling
+- Availability
+- Reliability
+
+** But wait...
+
+How does this change how we build our applications?
+
+* Less servers, more core business logic
+
+We can focus on breaking our application logic into small components
+
+* Less servers, more core business logic
+
+** Function as a Service
+
+Applications become a collection of *events* that trigger *functions*
+
+These functions then run on Lambda, OpenWhisk, Azure, or some other platform
+
+* How is serverless useful?
+
+** Frees up valuable engineering time and resources
+
+** Scaling and availability built-in
+
+** Cost-efficient
+
+* How is serverless useful?
+
+** Frees up valuable engineering time and resources
+
+Engineers can focus on core business logic instead of running servers
+
+* How is serverless useful?
+
+** Scaling and availability built-in
+
+Even with autoscaling, we still need to *think* about scaling
+
+* How is serverless useful?
+
+** Cost-efficient
+
+*** Platform as a Service
+
+Charged for uptime of the server running the platform
+
+*** Function as a Service
+
+Charged for execution time of the function
+
+* Cost-efficient
+
+** Economies of scale
+
+FaaS providers *can* hire people from the limited pool of top dev/ops
+talent
+
+Most companies cannot
+
+* Cost-efficient
+
+** Economies of scale
+
+1. Let talented, experienced people manage, optimize, and scale
+   resources as efficiently as they can
+
+2. Buy those resources from them at a low price
+
+3. Profit!
+
+
+* Drawbacks
+
+** Vendor lock-in
+
+** Less control over servers
+
+** False sense of security
+
+* Drawbacks
+
+** Vendor lock-in
+
+FaaS providers are incentivized to make it difficult to switch from their
+platform
+
+* Drawbacks
+
+** Less control
+
+"With little control comes little responsibility" - Spiderman's uncle
+
+This is a good thing! (most of the time)
+
+Until things are on fire...
+
+* Drawbacks
+
+** False sense of security
+
+We don't get to forget about servers completely
+
+* Summary
+
+** Not worrying about managing servers can be a blessing for engineering teams
+
+** Serverless providers are very cost-efficient
+
+** Serverless is cool, but does not absolve us of all responsibility
